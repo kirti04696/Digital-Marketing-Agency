@@ -1,0 +1,636 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Fly</title>
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container my-5">
+      <!-- heading section -->
+      <div class="row">
+        <div class="col-md-6 d-flex justify-content-center flex-column gap-3">
+          <h5 id="award">AWARD WINNING</h5>
+          <h1>DIGITAL MARKETING AGENCY</h1>
+          <p>
+            Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+            Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed
+            lacus nec risus finibus feugiat et fermentum.
+          </p>
+          <div>
+            <button
+              data-bs-toggle="modal"
+              data-bs-target="#contactUsModel"
+              class="my-3"
+            >
+              CONTACT US
+            </button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="asset/heading.jpg" alt="" width="90%" />
+        </div>
+      </div>
+
+      <!-- (modal section) -->
+      <div class="modal" id="contactUsModel">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <h5>Talk to us</h5>
+              <form action="">
+                <div class="form-floating">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="email"
+                    placeholder="Enter email"
+                    name="email"
+                    fdprocessedid="a9dkx"
+                  />
+                  <label for="email">Email</label>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">
+                    Please fill out this field.
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-floating col-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="First-name"
+                      placeholder="First name"
+                      name=""
+                      fdprocessedid="q80lvq"
+                    />
+                    <label for="pwd">First Name</label>
+                  </div>
+                  <div class="form-floating col-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="last-name"
+                      placeholder="Last name"
+                      name=""
+                      fdprocessedid="q80lvq"
+                    />
+                    <label for="pwd">Last Name</label>
+                  </div>
+                </div>
+
+                <div class="form-check mt-4">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="check"
+                    name="option"
+                  />
+                  <label class="form-check-label checkbox-content"
+                    >I agree to Fyle's terms and conditions, and provide consent
+                    to send me commnication</label
+                  >
+                </div>
+
+                <button
+                  onclick="contactUs()"
+                  type="button"
+                  class="btn col-12 submit-btn"
+                  onclick=""
+                  fdprocessedid="dlxa2n"
+                >
+                  Contact Us
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- slider section -->
+      <div class="fluid-container slider-sec">
+        <h5>WHAT WE DO</h5>
+        <div class="SLIDER-HEADER d-flex col-10">
+          <div class="col-4"><h3>SERVICE PROVIDE FOR YOU</h3></div>
+          <div>
+            <p>
+              Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+              Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed
+              lacus nec risus finibus feugiat et fermentum.
+            </p>
+          </div>
+        </div>
+        <section class="slider_container">
+          <div class="container">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide fly-slider">
+                  <div class="slider-content">
+                    <h6 class="slide-title">Web Development</h6>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <button class="btn btn-light">Read more</button>
+                  </div>
+                </div>
+                <div class="swiper-slide fly-slider">
+                  <div class="slider-content">
+                    <h6 class="slide-title">Web Development</h6>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <button class="btn btn-light">Read more</button>
+                  </div>
+                </div>
+                <div class="swiper-slide fly-slider">
+                  <!-- <img src="asset/tech3.avif" alt="" /> -->
+                  <div class="slider-content">
+                    <h6 class="slide-title">Web Development</h6>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <button class="btn btn-light">Read more</button>
+                  </div>
+                </div>
+                <div class="swiper-slide fly-slider">
+                  <div class="slider-content">
+                    <h6 class="slide-title">Web Development</h6>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <button class="btn btn-light">Read more</button>
+                  </div>
+                </div>
+                <div class="swiper-slide fly-slider">
+                  <div class="slider-content">
+                    <h6 class="slide-title">Web Development</h6>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <button class="btn btn-light">Read more</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- third section -->
+      <div class="sec row">
+        <h5>WHY CHOOSE US</h5>
+        <h1>WHY WE ARE BEST</h1>
+        <div class="d-flex flex-row">
+          <div class="choose-us col-3">
+            <div class="text-center">
+              <svg
+                version="1.0"
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                viewBox="0 0 127.000000 126.000000"
+                preserveAspectRatio="xMidYMid meet"
+              >
+                <g
+                  transform="translate(0.000000,126.000000) scale(0.100000,-0.100000)"
+                  fill="#000000"
+                  stroke="none"
+                >
+                  <path
+                    d="M639 1103 c-1 -5 -1 -31 1 -59 l2 -51 -49 -7 c-72 -9 -180 -65 -236
+-122 -56 -57 -106 -153 -114 -223 l-6 -50 -61 -3 c-46 -2 -61 -7 -61 -18 0
+-12 13 -15 60 -15 l60 0 7 -49 c4 -28 23 -82 43 -122 58 -118 173 -204 297
+-222 l53 -7 0 -60 c0 -49 4 -60 18 -63 15 -3 17 5 17 61 l0 64 49 5 c69 7 172
+59 229 115 59 59 108 155 117 228 l7 55 49 -6 c33 -4 54 -2 64 6 24 20 7 30
+-54 30 l-58 0 -7 49 c-10 75 -68 182 -129 237 -62 56 -150 100 -218 109 l-49
+7 0 59 c0 46 -3 59 -15 59 -8 0 -16 -3 -16 -7z m-1 -205 c-2 -53 0 -63 15 -66
+15 -3 17 5 17 63 0 58 2 66 18 61 9 -2 33 -8 52 -11 56 -11 147 -64 191 -112
+45 -49 94 -147 102 -205 l6 -37 -62 -3 c-47 -2 -62 -7 -62 -18 0 -12 13 -15
+63 -13 34 2 62 1 62 -2 0 -27 -28 -120 -47 -158 -49 -98 -170 -186 -280 -203
+l-43 -7 0 62 c0 54 -2 62 -17 59 -15 -3 -17 -12 -14 -62 l3 -59 -41 7 c-154
+24 -271 126 -315 275 -26 88 -25 90 41 88 47 -2 58 1 61 16 3 15 -5 17 -57 17
+-68 0 -68 -1 -47 78 42 158 175 268 349 291 5 1 7 -27 5 -61z"
+                  />
+                  <path
+                    d="M607 755 c-56 -14 -102 -54 -128 -110 -79 -170 124 -335 283 -230 48
+32 79 92 80 156 1 125 -114 215 -235 184z m139 -60 c120 -91 59 -275 -91 -275
+-90 0 -155 62 -155 148 0 132 143 206 246 127z"
+                  />
+                  <path
+                    d="M640 616 c0 -19 -6 -25 -27 -28 -36 -4 -38 -33 -3 -33 20 0 26 -6 28
+-27 5 -40 32 -37 32 3 0 25 3 30 16 25 19 -7 47 12 38 25 -3 5 -16 9 -30 9
+-19 0 -24 5 -24 25 0 16 -6 25 -15 25 -9 0 -15 -9 -15 -24z"
+                  />
+                </g>
+              </svg>
+            </div>
+            <h6>Clssified Vision & Target</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="choose-us col-3">
+            <svg
+              version="1.0"
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              viewBox="0 0 128.000000 122.000000"
+              preserveAspectRatio="xMidYMid meet"
+            >
+              <g
+                transform="translate(0.000000,122.000000) scale(0.100000,-0.100000)"
+                fill="#000000"
+                stroke="none"
+              >
+                <path
+                  d="M553 1095 c-187 -41 -349 -199 -398 -390 -50 -196 33 -427 199 -547
+l39 -28 270 0 c311 0 296 -4 391 101 230 255 158 654 -146 814 -114 60 -232
+77 -355 50z m97 -35 c0 -11 7 -20 15 -20 8 0 15 9 15 20 0 18 4 20 43 14 23
+-4 71 -16 107 -28 60 -20 65 -24 62 -49 -4 -30 12 -36 26 -10 9 15 12 14 40
+-6 17 -12 54 -47 82 -79 43 -48 48 -58 35 -68 -24 -18 -19 -37 9 -30 22 5 26
+1 45 -57 12 -34 24 -83 27 -109 6 -44 5 -48 -15 -48 -27 0 -27 -20 0 -27 19
+-5 20 -11 14 -52 -4 -25 -17 -71 -28 -101 -17 -43 -27 -55 -44 -55 -31 0 -39
+-13 -18 -29 17 -12 17 -15 -14 -54 -18 -22 -50 -54 -72 -71 l-39 -32 -275 0
+-275 0 -39 32 c-22 17 -54 49 -72 71 -30 38 -31 42 -15 54 23 16 11 36 -18 28
+-19 -5 -24 2 -44 58 -12 35 -24 81 -28 104 -5 36 -4 42 15 47 27 7 27 27 0 27
+-20 0 -21 4 -15 48 3 26 15 75 27 109 19 58 23 62 45 57 18 -5 24 -2 24 10 0
+9 -4 16 -10 16 -31 0 29 84 100 140 38 30 42 31 54 15 17 -24 40 -11 26 15 -9
+17 -5 22 27 36 35 14 140 41 171 43 6 1 12 -8 12 -19z"
+                />
+                <path
+                  d="M573 965 c-217 -59 -345 -272 -288 -480 11 -40 22 -65 31 -65 18 0
+18 5 -2 81 -32 125 7 251 107 343 74 69 145 97 244 97 113 0 219 -50 287 -136
+64 -82 92 -213 64 -307 -20 -69 -20 -78 -2 -78 24 0 41 69 41 165 0 80 -3 97
+-32 157 -56 119 -141 190 -268 223 -72 18 -113 18 -182 0z"
+                />
+                <path
+                  d="M536 802 c-2 -4 6 -77 18 -162 12 -85 21 -174 18 -197 -3 -37 0 -47
+26 -73 61 -61 157 -29 169 56 4 35 1 45 -25 75 -27 31 -159 251 -175 292 -7
+18 -22 23 -31 9z m89 -175 c22 -39 41 -74 43 -77 2 -5 -60 -32 -63 -27 -6 9
+-31 177 -26 177 3 0 24 -33 46 -73z m90 -142 c31 -30 32 -62 3 -92 -41 -44
+-118 -17 -118 42 0 31 41 75 70 75 12 0 32 -11 45 -25z"
+                />
+              </g>
+            </svg>
+
+            <h6>High Performance</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="choose-us col-3">
+            <svg
+              version="1.0"
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              viewBox="0 0 121.000000 118.000000"
+              preserveAspectRatio="xMidYMid meet"
+            >
+              <g
+                transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)"
+                fill="#000000"
+                stroke="none"
+              >
+                <path
+                  d="M319 1100 c-9 -5 -20 -26 -23 -45 -10 -53 -70 -108 -137 -126 l-54
+-14 -3 -148 c-2 -126 0 -147 13 -147 13 0 15 21 15 135 l0 135 28 6 c78 19
+129 62 162 137 l21 47 272 -2 271 -3 7 -32 c14 -69 85 -129 173 -148 l29 -6
+-5 -135 c-4 -119 -3 -134 11 -132 13 3 16 24 19 135 3 122 2 133 -17 152 -12
+12 -31 21 -43 21 -48 0 -121 61 -133 110 -4 14 -13 35 -21 48 -14 22 -15 22
+-292 22 -157 0 -284 -5 -293 -10z"
+                />
+                <path
+                  d="M363 1003 c-31 -51 -87 -104 -135 -129 -59 -30 -65 -54 -49 -200 19
+-179 73 -301 190 -426 70 -75 200 -168 234 -168 55 0 213 121 287 218 104 139
+142 252 144 426 l1 119 -60 36 c-36 22 -76 58 -103 94 l-43 57 -224 0 -225 0
+-17 -27z m471 -32 c22 -42 90 -105 137 -126 l40 -18 -2 -80 c-4 -157 -38 -273
+-115 -389 -55 -82 -165 -185 -238 -224 l-54 -28 -58 35 c-74 44 -200 169 -242
+241 -59 100 -84 189 -91 322 l-6 120 29 15 c63 35 109 75 134 116 l27 44 212
+1 212 0 15 -29z"
+                />
+                <path
+                  d="M545 926 c-65 -28 -102 -101 -93 -181 4 -31 1 -35 -19 -35 -13 0 -32
+-9 -43 -20 -18 -18 -20 -33 -20 -143 0 -179 -17 -167 239 -167 148 0 210 3
+219 12 8 8 12 56 12 148 0 120 -2 139 -18 153 -10 10 -28 17 -40 17 -19 0 -21
+5 -21 60 1 73 -22 116 -79 148 -45 25 -92 28 -137 8z m113 -30 c49 -25 64 -51
+71 -121 l7 -65 -128 0 -128 0 0 48 c0 61 27 112 71 134 41 22 71 23 107 4z
+m150 -354 l3 -132 -201 2 -201 3 0 122 c0 68 3 127 6 133 4 7 74 9 198 8 l192
+-3 3 -133z"
+                />
+                <path
+                  d="M582 588 c-15 -15 -16 -45 -2 -53 6 -3 10 -19 10 -34 0 -15 3 -31 7
+-34 11 -12 31 13 26 34 -3 11 2 28 12 39 17 19 17 21 0 40 -21 23 -36 25 -53
+8z"
+                />
+                <path
+                  d="M116 562 c-7 -12 29 -122 61 -187 66 -131 179 -252 308 -328 59 -36
+78 -42 125 -42 70 1 144 43 253 145 108 101 182 216 223 350 17 57 17 70 0 70
+-8 0 -18 -19 -25 -47 -31 -121 -136 -284 -241 -372 -29 -25 -88 -66 -132 -92
+l-79 -48 -58 33 c-86 49 -128 79 -184 133 -105 100 -161 189 -203 318 -21 66
+-36 87 -48 67z"
+                />
+              </g>
+            </svg>
+
+            <h6>Maintain Security</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="choose-us col-3">
+            <svg
+              version="1.0"
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              viewBox="0 0 111.000000 117.000000"
+              preserveAspectRatio="xMidYMid meet"
+            >
+              <g
+                transform="translate(0.000000,117.000000) scale(0.100000,-0.100000)"
+                fill="#000000"
+                stroke="none"
+              >
+                <path
+                  d="M365 1075 c-128 -45 -237 -140 -295 -258 -32 -65 -63 -187 -50 -200
+4 -4 45 -7 91 -5 l83 3 8 38 c12 60 53 130 101 174 53 49 75 61 147 84 l55 17
+3 86 3 86 -38 0 c-21 0 -69 -11 -108 -25z m115 -63 l0 -59 -42 -13 c-110 -32
+-183 -93 -232 -192 -20 -39 -36 -79 -36 -89 0 -17 -8 -19 -61 -19 l-62 0 7 40
+c25 155 160 308 324 366 100 35 102 35 102 -34z"
+                />
+                <path
+                  d="M570 1011 l0 -89 38 -7 c20 -4 63 -21 95 -38 l58 -30 62 61 c59 59
+60 62 43 80 -40 45 -202 112 -268 112 l-28 0 0 -89z m101 43 c57 -17 169 -72
+169 -83 0 -4 -18 -24 -40 -46 l-39 -39 -53 26 c-29 14 -65 28 -80 32 -27 6
+-28 9 -28 66 0 33 4 60 8 60 5 0 33 -7 63 -16z"
+                />
+                <path
+                  d="M863 862 c-29 -30 -53 -58 -53 -62 0 -4 11 -27 24 -51 14 -24 30 -65
+37 -91 l11 -48 90 0 91 0 -7 51 c-13 98 -89 252 -126 255 -8 1 -39 -23 -67
+-54z m104 -39 c27 -51 63 -150 63 -175 0 -5 -27 -8 -61 -6 l-60 3 -18 52 c-9
+28 -24 62 -33 75 -16 22 -15 25 25 66 23 23 44 42 47 42 3 0 20 -26 37 -57z"
+                />
+                <path
+                  d="M564 769 c-4 -7 1 -16 10 -21 16 -9 16 -11 1 -28 -24 -27 -9 -46 17
+-23 15 13 22 15 25 6 5 -15 43 -18 43 -4 0 5 -7 14 -15 21 -14 12 -14 15 0 30
+20 22 2 38 -21 19 -11 -9 -18 -9 -26 -1 -15 15 -25 15 -34 1z"
+                />
+                <path
+                  d="M381 666 c-35 -63 -38 -76 -15 -76 8 0 20 14 25 30 6 17 14 30 17 30
+4 0 15 -20 25 -45 37 -88 180 -185 275 -185 38 0 20 23 -29 36 -71 18 -114 40
+-155 77 -41 37 -93 122 -82 133 4 3 22 -3 41 -15 32 -19 47 -19 47 0 0 7 -59
+42 -111 67 -4 2 -21 -22 -38 -52z"
+                />
+                <path
+                  d="M640 627 c0 -7 5 -18 11 -24 8 -8 7 -17 -2 -31 -17 -28 -4 -40 20
+-18 16 15 19 15 31 1 9 -11 16 -13 23 -6 7 7 6 15 -3 26 -10 12 -10 19 -2 27
+7 7 12 18 12 25 0 19 -27 16 -34 -3 -6 -16 -8 -16 -24 0 -22 19 -32 20 -32 3z"
+                />
+                <path
+                  d="M19 545 c-13 -12 14 -125 46 -192 40 -85 107 -161 189 -215 65 -42
+168 -78 222 -78 l35 0 -3 87 -3 87 -45 11 c-127 33 -223 125 -253 245 l-14 55
+-85 3 c-46 1 -86 0 -89 -3z m160 -72 c31 -120 148 -231 269 -258 32 -7 32 -7
+32 -66 0 -68 1 -68 -93 -39 -163 50 -308 211 -333 368 l-7 42 60 0 59 0 13
+-47z"
+                />
+                <path
+                  d="M876 513 c-12 -65 -55 -140 -107 -187 -48 -43 -138 -86 -179 -86 -18
+0 -20 -7 -20 -90 l0 -90 31 0 c47 0 120 21 126 37 9 23 -3 25 -58 9 -29 -9
+-56 -16 -61 -16 -4 0 -8 26 -8 59 l0 58 46 13 c111 31 213 133 250 248 l16 52
+59 0 c33 0 59 -4 59 -9 0 -5 -9 -37 -20 -72 -18 -60 -18 -79 0 -79 11 0 38 83
+46 143 l7 47 -91 0 -90 0 -6 -37z"
+                />
+                <path
+                  d="M366 484 c-36 -35 -7 -104 42 -104 27 0 62 33 62 58 0 52 -68 82
+-104 46z m70 -29 c7 -18 -13 -45 -33 -45 -17 0 -27 24 -19 45 7 20 45 19 52 0z"
+                />
+                <path
+                  d="M926 275 c-19 -29 -20 -45 -3 -45 16 1 50 48 42 60 -10 16 -22 12
+-39 -15z"
+                />
+                <path
+                  d="M811 166 c-16 -17 -19 -26 -11 -31 13 -8 62 24 62 40 -1 20 -28 15
+-51 -9z"
+                />
+              </g>
+            </svg>
+
+            <h6>Better Strategy & Quality</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4th section -->
+      <div class="sec row">
+        <h5>OUR PROJECT</h5>
+        <h1>WHY WE ARE BEST</h1>
+        <div class="row">
+          <div class="col-7 offset-1">
+            <img
+              src="asset/Screenshot 2024-06-01 151634.png"
+              alt=""
+              width="100%"
+              class="sec-boarder"
+            />
+          </div>
+          <div class="sec-boarder col-3 d-flex flex-column">
+            <div class="services">
+              <h5 class="service-header">Genderless Kei – Japan’s Hot</h5>
+              <p>
+                Set to launch on the manufacturer’s new A330neo aircraft in
+                2017, it’s offering lots of
+              </p>
+            </div>
+            <div class="services">
+              <h5 class="service-header">Better Strategy & Quality</h5>
+              <p>
+                Set to launch on the manufacturer’s new A330neo aircraft in
+                2017, it’s offering lots of
+              </p>
+            </div>
+            <div class="services">
+              <h5 class="service-header">Genderless Kei – Japan’s Hot</h5>
+              <p>
+                Set to launch on the manufacturer’s new A330neo aircraft in
+                2017, it’s offering lots of
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5th section -->
+    <div class="sec expert-growth">
+      <h5>EXPERT GROWTH</h5>
+      <h1>OUR COMPANY GROWTH</h1>
+      <div class="d-flex flex-row gap-5 justify-content-center">
+        <div class="growth col-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="#ff3147"
+            class="bi bi-heart-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+            />
+          </svg>
+          <h2>199+</h2>
+          <p>Satisfied Customer</p>
+        </div>
+        <div class="growth col-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="#ff3147"
+            class="bi bi-clock-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"
+            />
+          </svg>
+          <h2>1593+</h2>
+          <p>Day of Operation</p>
+        </div>
+        <div class="growth col-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="#ff3147"
+            class="bi bi-check-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+            />
+          </svg>
+          <h2>281+</h2>
+          <p>Complete Project</p>
+        </div>
+        <div class="growth col-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="#ff3147"
+            class="bi bi-trophy-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5q0 .807-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33 33 0 0 1 2.5.5m.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935m10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935"
+            />
+          </svg>
+          <h2>75+</h2>
+          <p>Win award</p>
+        </div>
+      </div>
+    </div>
+    <!-- 6th section -->
+
+    <div class="sec col-5 d-flex flex-column mx-auto">
+      <h5>CLIENT'S FEEDBACK</h5>
+      <h1>PEOPLE SAY'S ABOUT US !</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nemo a
+        possimus non eaque qui doloribus numquam architecto quasi maior
+      </p>
+      <div class="people-bottom d-flex">
+        <p style="color: #ff3147">JANNAT TUMPA</p>
+        <p style="color: #a59fa0" class="px-1">
+          - COO AMERIMAR INTERPRISES, INC
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-sec gap-3">
+      <img src="asset/footer1.png" alt="" class="col-1" />
+      <img src="asset/footer2.png" alt="" class="col-1" />
+      <img src="asset/footer3.png" alt="" class="col-1" />
+      <img src="asset/footer4.png" alt="" class="col-1" />
+      <img src="asset/footer5.png" alt="" class="col-1" />
+      <img src="asset/footer6.png" alt="" class="col-1" />
+    </div>
+  </body>
+
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"
+  ></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="Js/index.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 50,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        "@0.00": {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        "@0.75": {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        "@1.00": {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        "@1.50": {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+      },
+    });
+
+    $(".fly-slider").hover(
+      function () {
+        // Mouse enter event
+        console.log("vjhgjhjh");
+        $(this).find(".slider-content").css({ display: "block" });
+      },
+      function () {
+        // Mouse leave event
+        $(this).find(".slider-content").css({ display: "none" });
+      }
+    );
+  </script>
+</html>

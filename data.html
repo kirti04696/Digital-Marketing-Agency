@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swapper slider</title>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        max-width: calc(100 / 3%);
+        min-height: 300px;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .swiper-button-next:after,
+      .swiper-button-prev:after {
+        color: #ff3147;
+      }
+      .swiper-pagination-bullet-active {
+        border: 1px solid #ff3147;
+        border-radius: 50%;
+
+        background-color: #ff3147;
+      }
+      .swiper-container {
+        width: 600px;
+        height: 400px;
+        position: relative;
+      }
+
+      .swiper-pagination {
+        position: absolute;
+        bottom: 10px; /* Adjust this value as needed */
+        width: 100%;
+        text-align: center;
+      }
+
+      /* ------- */
+      .fly-slider {
+        background-image: url("asset/tech3.avif");
+        /* position: absolute; */
+        overflow: hidden;
+      }
+      .slider-content {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: none;
+      }
+      .slider-content h6 {
+        font-size: x-large;
+        margin: 0;
+      }
+      .slider-content:hover {
+        display: block;
+      }
+      .fly-slider:hover {
+        background-image: none;
+        background-color: #ff3147;
+        /* display: none; */
+      }
+    </style>
+  </head>
+  <body>
+    <section class="slider_container">
+      <div class="container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide fly-slider">
+              <div class="slider-content">
+                <h6>Web Development</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button class="btn btn-primary">Read more</button>
+              </div>
+            </div>
+            <div class="swiper-slide fly-slider">
+              <div class="slider-content">
+                <h6>Web Development</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button class="btn btn-primary">Read more</button>
+              </div>
+            </div>
+            <div class="swiper-slide fly-slider">
+              <!-- <img src="asset/tech3.avif" alt="" /> -->
+              <div class="slider-content">
+                <h6>Web Development</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button class="btn btn-primary">Read more</button>
+              </div>
+            </div>
+            <div class="swiper-slide fly-slider">
+              <div class="slider-content">
+                <h6>Web Development</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button class="btn btn-primary">Read more</button>
+              </div>
+            </div>
+            <div class="swiper-slide fly-slider">
+              <div class="slider-content">
+                <h6>Web Development</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button class="btn btn-primary">Read more</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 50,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          "@0.00": {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          "@0.75": {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          "@1.00": {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          "@1.50": {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        },
+      });
+
+      $(".fly-slider").hover(
+        function () {
+          // Mouse enter event
+          console.log("vjhgjhjh");
+          $(this).find(".slider-content").css({ display: "block" });
+        },
+        function () {
+          // Mouse leave event
+          $(this).find(".slider-content").css({ display: "none" });
+        }
+      );
+    </script>
+  </body>
+</html>
